@@ -73,9 +73,10 @@ cockroach sql \
   --certs-dir="${ROOT_CERTS_DIR}" \
   --execute "GRANT SELECT ON DATABASE ${DB_TESTNET} TO  ${USER_POLITEIAWWW}"
 
+# Disable CockroachDB diagnostic reporting
 cockroach sql \
   --certs-dir="${ROOT_CERTS_DIR}" \
-  --execute "SET CLUSTER SETTING diagnostics.reporting.enabled = false"
+  --execute "SET CLUSTER SETTING diagnostics.reporting.enabled=false"
 
 cockroach sql \
   --certs-dir="${ROOT_CERTS_DIR}" \
