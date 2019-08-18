@@ -81,3 +81,4 @@ cockroach sql \
 cockroach sql \
   --certs-dir="${ROOT_CERTS_DIR}" \
   --execute "SET CLUSTER SETTING diagnostics.reporting.send_crash_reports=false"
+  
